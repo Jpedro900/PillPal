@@ -1,12 +1,13 @@
 import { Button } from 'react-native'
 import React, { Component } from 'react'
 
-export default class ButtonLogin extends Component {
+export default class ButtonUi extends Component {
   render() {
     return (
       <Button
         color={'#1554F6'}
-        title="Login"
+        title = {this.props.title}
+        onPress={this.props.onPress}
       />
     )
   }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextInput, View, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import ButtonLogin from './ui/ButtonLogin';
+import ButtonUi from './ui/ButtonUi';
 
 const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -27,7 +27,7 @@ const FormLogin = () => {
           <Ionicons name={showPassword ? 'eye-off' : 'eye'} size={30} color="black" />
         </TouchableOpacity>
       </View>
-      <ButtonLogin />
+      <ButtonUi title="Login"/>
     </View>
   );
 };

@@ -5,7 +5,7 @@ import FormCadastro from '../../components/FormCadastro'
 export function SignUp() {
   return (
     <View className = " p-4 pt-20 ">
-      <Text className = " self-center text-2xl">Cadastre-se gratuitamente</Text>
+      <Text className = " self-center text-2xl mb-6">Cadastre-se gratuitamente</Text>
       <FormCadastro />
     </View>
   )
