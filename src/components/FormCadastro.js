@@ -79,10 +79,7 @@ const FormLogin = () => {
           </TouchableOpacity>
           {passwordMatch === 'Different' && <Text className=" text-red-600">As senhas não são iguais</Text>}
         </View>
-      </View>
-      <View className="mt-5" >
-        <ButtonUi title="Cadastrar"/>
-      </View>
+      </View>      
     </View>
   );
 };

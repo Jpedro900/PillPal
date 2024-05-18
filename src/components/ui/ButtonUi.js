@@ -1,14 +1,24 @@
-import { Button } from 'react-native'
-import React, { Component } from 'react'
+import React from 'react';
+import { Button , View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-export default class ButtonUi extends Component {
-  render() {
-    return (
+const ButtonUi = (props) => {
+  const navigation = useNavigation();
+
+  const handlePress = () => {
+    navigation.navigate(props.screen);
+  };
+
+  return (
+
+    <View className=" h-12 w-full">
       <Button
-        color={'#1554F6'}
-        title = {this.props.title}
-        onPress={this.props.onPress}
+        color="#1554F6"
+        title={props.title}
+        onPress={handlePress}
       />
-    )
-  }
-}
+    </View>
+  );
+};
+
+export default ButtonUi;

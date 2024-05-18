@@ -7,7 +7,7 @@ const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <View className="mt-4 flex justify-around h-[160px]">
+    <View className="mt-4 flex justify-around h-[120px]">
       <TextInput
         placeholder="E-mail"
         keyboardType="email-address"
@@ -27,7 +27,6 @@ const FormLogin = () => {
           <Ionicons name={showPassword ? 'eye-off' : 'eye'} size={30} color="black" />
         </TouchableOpacity>
       </View>
-      <ButtonUi title="Login"/>
     </View>
   );
 };
