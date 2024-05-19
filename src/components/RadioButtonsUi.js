@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet, Alert} from 'react-native';
+import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 const RadioButtonsUi = ({ onSelectedDay }) => {
-
   const [selectedOption, setSelectedOption] = useState(null);
 
-  const handleSelectOption = (option) => {
-    setSelectedOption(option);
+  const handleSelectOption = (option, index) => {
+    setSelectedOption(index);
     onSelectedDay(option);
   };
 
+  const days = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+
   return (
     <View style={styles.container}>
-      {['D', 'S', 'T', 'Q', 'Q', 'S', 'S'].map((option, index) => (
-        <TouchableOpacity activeOpacity={0.9}
+      {days.map((option, index) => (
+        <TouchableOpacity
           key={index}
           style={[
             styles.radioButton,
             selectedOption === index && styles.radioButtonActive,
           ]}
-          onPress={() => {handleSelectOption(index)}}
+          onPress={() => handleSelectOption(option, index)}
         >
-          <Text style={styles.radioButtonText}>{option}</Text>
+          <Text style={styles.radioButtonText}>{option.charAt(0)}</Text>
         </TouchableOpacity>
       ))}
     </View>
