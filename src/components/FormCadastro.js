@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { TextInput, View, TouchableOpacity, Text, FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import ButtonUi from './ui/ButtonUi';
 import PasswordStrengthMeterBar from 'react-native-password-strength-meter-bar';
 
 const FormLogin = () => {
