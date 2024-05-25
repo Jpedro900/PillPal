@@ -4,7 +4,6 @@
     "slug": "PillPal",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
       "**/*"
@@ -13,13 +12,15 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+      "package": "com.jpedrocs09.PillPal"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "53e24e6a-e457-4249-ae8f-8c5b2c591550"
+      }
     }
   }
 }
