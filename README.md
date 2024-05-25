@@ -35,7 +35,7 @@ Siga as etapas abaixo para clonar e executar o projeto localmente:
 
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/pillpal.git
+   git clone https://github.com/Jpedro900/PillPal.git
    ```
 2. Navegue até o diretório do projeto:
    ```sh
