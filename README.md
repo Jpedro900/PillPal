@@ -65,10 +65,6 @@ Para criar o arquivo APK do aplicativo, siga estas etapas:
 3. Siga as instruções na linha de comando para completar o processo de build.
 4. Após a conclusão, você receberá um link para download do APK.
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
-
 ---
 
 Este README fornece uma descrição detalhada e profissional do seu projeto, facilitando o entendimento dos usuários e contribuidores sobre o objetivo e as funcionalidades do PillPal.
