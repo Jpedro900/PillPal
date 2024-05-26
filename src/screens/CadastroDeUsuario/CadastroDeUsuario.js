@@ -1,4 +1,4 @@
-import { statusBar, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import React from 'react'
 import FormCadastro from '../../components/FormCadastro'
 import ButtonUi from '../../components/ui/ButtonUi';

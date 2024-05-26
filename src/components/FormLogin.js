@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { TextInput, View, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import ButtonUi from './ui/ButtonUi';
 
 const FormLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
